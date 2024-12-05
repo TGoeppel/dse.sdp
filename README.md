@@ -46,15 +46,15 @@ $ dse-simer out/examples/minimal
 > Hint: Find more information about the Simer [command options here](https://boschglobal.github.io/dse.doc/docs/user/simer/#options).
 
 
-### Connect a Remote Gateway Model to a Simulation running in Cloudspace
+### Connect a Remote Gateway Model to a Simulation running in Codespaces
 
-A Cloudspace can forward ports to allow remote connections to services running in that Cloudspace. 
+A Codespace can forward ports to allow remote connections to services running in that Codespace. 
 In particular these scenarios exist:
 
-1. Cloudspace running in a Web Browser: ports are forwarded via HTTP endpoints (i.e. URLs). This is not suitable for Simer based simuations as there is no support for HTTP endpoints (at this time).
-2. Cloudspace running in VS Code: ports are forwarded to local host. Local applications can connect to these ports and acces services running in the Cloudspace. This **is** suitable for Simer based simulations.
+1. Codespace running in a Web Browser: ports are forwarded via HTTP endpoints (i.e. URLs). This is not suitable for Simer based simuations as there is no support for HTTP endpoints (at this time).
+2. Codespace running in VS Code: ports are forwarded to local host. Local applications can connect to these ports and acces services running in the Codespace. This **is** suitable for Simer based simulations.
 
-#### Connect VS Code to a Cloudspace
+#### Connect VS Code to a Codespace
 
 > Hint: Start the Codespace in a Web Browser first, then connect to the running Codespace from VS Code.
 
@@ -74,7 +74,7 @@ $ cd dse.modelc
 $ PACKAGE_ARCH=windows-x64 make
 ```
 
-__Cloudspace Terminal__
+__Codespace Terminal__
 ```bash
 # Check your environment.
 $ dse-env 
